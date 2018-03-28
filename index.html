@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="height:100%; background-color: gray;">
+	<head>
+		<title>mishal's website!</title>
+		<script src="code.js"></script>
+		<script src="jquery-3.3.1.js"></script>
+		<link rel="stylesheet" href="styles.css" type="text/css"/>
+		<style>
+		.menu-item {    
+			border-width: 0 7px 0 0;
+			border-color: transparent;
+			border-style: solid;
+		}
+
+		.menu-item:hover {
+			cursor: pointer;
+			border-color:blue;
+		}
+
+		</style>
+	</head>
+	<body style="height:100%;margin:0px;background-color:yellow;">
+		<div id="header" style="height:20%; background-color: green; background-image: URL('notation.jpg')">header</div>
+		<div class="sidebar" style="background-color:red; height:80%; width:10%;">
+			<div id="workMenuItem" style="height:50%; background-color: navy" class="menu-item">
+				<div style="position:relative; margin-left: auto; margin-right: auto; top:50%; width: 50%; text-align:center; transform: TranslateY(-50%)">
+					work
+				</div>
+			</div>
+			<div id="playMenuItem" style="height:50%; background-color: DeepPink" class="menu-item">
+				<div style="position:relative; margin-left: auto; margin-right: auto; top:50%; width: 50%; text-align:center; transform: TranslateY(-50%)">
+					play
+				</div>
+			</div>
+		</div>
+		<div id="content" style="position:absolute; top:20%; left:10%; background-color:blue;">
+			First of all, note that the gap where the positioned element should be in the document flow is no longer there — the first and third elements have closed together like it no longer exists! Well, in a way, this is true. An absolutely positioned element no longer exists in the normal document layout flow. Instead, it sits on its own layer separate from everything else. This is very useful — it means that we can create isolated UI features that don't interfere with the position of other elements on the page — for example popup 
+		</div>
+	</body>
+</html>
